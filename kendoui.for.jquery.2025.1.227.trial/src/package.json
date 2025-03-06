@@ -1,0 +1,66 @@
+{
+  "name": "kendo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-ui-core.git"
+  },
+  "version": "1.0.0",
+  "dependencies": {
+    "@progress/kendo-charts": "^2.7.1",
+    "@progress/kendo-dateinputs-common": "^0.4.0",
+    "@progress/kendo-draggable": "^3.0.2",
+    "@progress/kendo-drawing": "1.21.1",
+    "@progress/kendo-font-icons": "4.0.0",
+    "@progress/kendo-licensing": "^1.4.0",
+    "@progress/kendo-ooxml": "^1.9.0",
+    "@progress/kendo-pdfviewer-common": "^0.4.0",
+    "@progress/kendo-pivotgrid-common": "0.6.1",
+    "@progress/kendo-ripple": "^1.0.2",
+    "@progress/kendo-spreadsheet-common": "^1.2.2",
+    "@progress/kendo-svg-icons": "4.0.0",
+    "jquery": "1.10.0 - 3.7.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@rollup/plugin-alias": "^5.1.1",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.3.0",
+    "@rollup/plugin-virtual": "^3.0.2",
+    "@rollup/stream": "^3.0.1",
+    "gulp": "^4.0.2",
+    "gulp-cached": "~1.1.0",
+    "gulp-clone": "^2.0.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-filter": "~3.0.1",
+    "gulp-flatmap": "^1.0.2",
+    "gulp-if": "^2.0.0",
+    "gulp-ignore": "^1.2.1",
+    "gulp-progeny": "~0.4.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "~0.5.4",
+    "gulp-shell": "^0.5.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-terser": "^2.1.0",
+    "merge2": "~0.3.6",
+    "plugin-error": "^1.0.1",
+    "rollup": "^4.26.0",
+    "rollup-plugin-polyfill": "^4.2.0",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0",
+    "yargs": "~3.27.0"
+  },
+  "overrides": {
+    "chokidar": "^3.0.0",
+    "glob-stream": "^8.0.0",
+    "micromatch": "^4.0.0"
+  },
+  "scripts": {
+    "build": "npx gulp build",
+    "scripts": "npx gulp scripts",
+    "scripts:babel": "npx gulp scripts:babel",
+    "scripts:mjs": "npx gulp scripts:mjs",
+    "scripts:modules": "npx rollup -c rollup.modules.config.mjs",
+    "scripts:all": "npm run scripts && npm run scripts:modules"
+  }
+}
